@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.0">
+
+    <servlet>
+        <servlet-name>GreetingController</servlet-name>
+        <servlet-class>com.minivotingsystem.controller.GreetingController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>VoteServlet</servlet-name>
+        <servlet-class>com.minivotingsystem.controller.VoteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GreetingController</servlet-name>
+        <url-pattern>/greeting</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>VoteServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>VoteServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>VoteServlet</servlet-name>
+        <url-pattern>/api/vote</url-pattern>
+    </servlet-mapping>
+
+</web-app>
